@@ -112,8 +112,16 @@
             <label for="github">GitHub</label>
 
 
-
-    
+            <label for="musicStyle">Estilo musical preferido:</label>
+            <input list="styleTypes" name="userMusicStyle" id="musicStyle" autocomplete="music-genre"/>
+            <datalist id="styleTypes">
+                <option id="rock" value="Rock"/>
+                <option id="pop" value="Pop"/>
+                <option id="sertanejo" value="Sertanejo"/>
+                <option id="funk" value="Funk"/>
+                <option id="mpb" value="MPB"/>
+                <option id="eletronica" value="Eletrônica"/>
+            </datalist>
         </fieldset>
 
         <button type="submit">Enviar</button>
