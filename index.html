@@ -13,6 +13,7 @@
       <form action="" method="get">
         <fieldset>
           <legend>Dados pessoais</legend>
+
           <label for="userName">Nome:</label>
           <input type="text" name="userName" required />
 
@@ -37,6 +38,21 @@
           <label for="userImage">Upload de foto:</label>
           <input type="file" accept="image/*" name="userImage" />
         </fieldset>
+        <fieldset>
+            <legend>Perfil</legend>
+
+            <label for="userGender">Gênero:</label>
+            <input type="radio" name="uderGender" value="Masculino">  
+            <label for="userGender">Masculino</label>
+
+            <input type="radio" name="uderGender" value="Feminimo">  
+            <label for="userGender">Feminimo</label>
+
+            <input type="radio" name="uderGender" value="Prefiro não informar">  
+            <label for="userGender">Prefiro não informar</label>
+
+        </fieldset>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
