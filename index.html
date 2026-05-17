@@ -16,7 +16,7 @@
 
           <label for="userName">Nome:</label>
           <input type="text" name="userName" required />
-
+          
           <label for="userAge">Idade:</label>
           <input type="number" name="userAge" required min="12" max="120" />
 
@@ -34,23 +34,31 @@
             placeholder="9999999999"
             required
           />
-
+          
           <label for="userImage">Upload de foto:</label>
           <input type="file" accept="image/*" name="userImage" />
         </fieldset>
+
         <fieldset>
-            <legend>Perfil</legend>
+          <legend>Perfil</legend>
 
-            <label for="userGender">Gênero:</label>
-            <input type="radio" name="uderGender" value="Masculino">  
-            <label for="userGender">Masculino</label>
+          <label for="userGender">Gênero:</label>
+          <input type="radio" name="uderGender" value="Masculino" />
+          <label for="userGender">Masculino</label>
 
-            <input type="radio" name="uderGender" value="Feminimo">  
-            <label for="userGender">Feminimo</label>
+          <input type="radio" name="uderGender" value="Feminimo" />
+          <label for="userGender">Feminimo</label>
 
-            <input type="radio" name="uderGender" value="Prefiro não informar">  
-            <label for="userGender">Prefiro não informar</label>
+          <input type="radio" name="uderGender" value="Prefiro não informar" />
+          <label for="userGender">Prefiro não informar</label>
 
+          <label for="maritalStatus">Estado Civil:</label>
+          <select name="maritalStatus" id="">
+            <option value="Casado">Casado</option>
+            <option value="Solteiro">Solteiro</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viúvo">Viúvo</option>
+          </select>
         </fieldset>
 
         <button type="submit">Enviar</button>
