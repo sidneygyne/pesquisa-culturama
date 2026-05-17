@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/culturama-favico.png" type="image/png" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title url="index.html">Pesquisa Culturama</title>
   </head>
   <body>
     <header>
+      <img src="/img/logo-culturama.png" alt="logo culturama" width="150" />
       <h1>Pesquisa Culturama</h1>
     </header>
     <section>
@@ -15,16 +24,23 @@
           <legend>Dados pessoais</legend>
 
           <label for="name">Nome:</label>
-          <input type="text" name="userName" required  id="name"/>
+          <input type="text" name="userName" required id="name" />
 
           <label for="age">Idade:</label>
-          <input type="number" name="userAge" required min="12" max="120" id="age" />
+          <input
+            type="number"
+            name="userAge"
+            required
+            min="12"
+            max="120"
+            id="age"
+          />
 
           <label for="birthDate">Data de Nascimento:</label>
-          <input type="date" name="userbirthDate" id="birthDate" required/>
+          <input type="date" name="userbirthDate" id="birthDate" required />
 
           <label for="email">Email:</label>
-          <input type="email" name="userEmail" required  id="email"/>
+          <input type="email" name="userEmail" required id="email" />
 
           <label for="phoneNumber">Telefone:</label>
           <input
@@ -44,12 +60,23 @@
           <legend>Perfil</legend>
 
           <p>Gênero:</p>
-          <input type="radio" name="userGender" value="Masculino" id="male" required />
+          <input
+            type="radio"
+            name="userGender"
+            value="Masculino"
+            id="male"
+            required
+          />
           <label for="male">Masculino</label>
           <input type="radio" name="userGender" value="Feminimo" id="female" />
           <label for="female">Feminimo</label>
 
-          <input type="radio" name="userGender" value="Prefiro não informar" id="preferNotToSay" />
+          <input
+            type="radio"
+            name="userGender"
+            value="Prefiro não informar"
+            id="preferNotToSay"
+          />
           <label for="preferNotToSay">Prefiro não informar</label>
 
           <label for="maritalStatus">Estado Civil:</label>
@@ -94,71 +121,116 @@
           </select>
 
           <label for="city">Cidade:</label>
-          <input type="text" name="userCity" id="city" autocomplete="address-level2"/>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Hábitos</legend>
-
-            <p id="social">Redes sociais:</p>
-            <input type="checkbox" name="social" id="instagram" value="instagram"/>
-            <label for="instagram">Instagram</label>
-            <input type="checkbox" name="social" id="facebook" value="facebook"/>
-            <label for="facebook">Facebook</label>
-            <input type="checkbox" name="social" id="linkedin" value="linkedin"/>
-            <label for="linkedin">LinkedIn</label>
-             <input type="checkbox" name="social" id="x" value="x"/>
-            <label for="x">X</label>
-            <input type="checkbox" name="social" id="github" value="github"/>
-            <label for="github">GitHub</label>
-
-
-            <label for="musicStyle">Estilo musical preferido:</label>
-            <input list="styleTypes" name="userMusicStyle" id="musicStyle" autocomplete="music-genre"/>
-            <datalist id="styleTypes">
-                <option id="rock" value="Rock"/>
-                <option id="pop" value="Pop"/>
-                <option id="sertanejo" value="Sertanejo"/>
-                <option id="funk" value="Funk"/>
-                <option id="mpb" value="MPB"/>
-                <option id="eletronica" value="Eletrônica"/>
-            </datalist>
-
-            <label for="favoriteColor">Cor favorita:</label>
-            <input type="color" name="userFavoriteColor" id="favoriteColor"/>
+          <input
+            type="text"
+            name="userCity"
+            id="city"
+            autocomplete="address-level2"
+          />
         </fieldset>
 
         <fieldset>
-            <legend>Opnião</legend>
+          <legend>Hábitos</legend>
 
-            <p id="satisfaction">Nível de satisfação com a Culturama:</p>
-            <input type="radio" name="userSatisfaction" id="otimo" value="otimo"/>
-            <label for="otimo">Muito satisfeito</label>
-            <input type="radio" name="userSatisfaction" id="bom" value="bom"/>
-            <label for="bom">Satisfeito</label>
-            <input type="radio" name="userSatisfaction" id="regular" value="regular"/>
-            <label for="regular">Regular</label>
-            <input type="radio" name="userSatisfaction" id="ruim" value="ruim"/>
-            <label for="ruim">Insatisfeito</label>
-            <input type="radio" name="userSatisfaction" id="pessimo" value="pessimo"/>
-            <label for="pessimo">Muito insatisfeito</label>
+          <p id="social">Redes sociais:</p>
+          <input
+            type="checkbox"
+            name="social"
+            id="instagram"
+            value="instagram"
+          />
+          <label for="instagram">Instagram</label>
+          <input type="checkbox" name="social" id="facebook" value="facebook" />
+          <label for="facebook">Facebook</label>
+          <input type="checkbox" name="social" id="linkedin" value="linkedin" />
+          <label for="linkedin">LinkedIn</label>
+          <input type="checkbox" name="social" id="x" value="x" />
+          <label for="x">X</label>
+          <input type="checkbox" name="social" id="github" value="github" />
+          <label for="github">GitHub</label>
 
-            <label for="comment">Comentários:</label>
-            <textarea name="userComment" id="comment" rows="4" cols="50" placeholder="Escreva suas opinião aqui..." required></textarea>
+          <label for="musicStyle">Estilo musical preferido:</label>
+          <input
+            list="styleTypes"
+            name="userMusicStyle"
+            id="musicStyle"
+            autocomplete="music-genre"
+          />
+          <datalist id="styleTypes">
+            <option id="rock" value="Rock" />
+            <option id="pop" value="Pop" />
+            <option id="sertanejo" value="Sertanejo" />
+            <option id="funk" value="Funk" />
+            <option id="mpb" value="MPB" />
+            <option id="eletronica" value="Eletrônica" />
+          </datalist>
 
-
-
+          <label for="favoriteColor">Cor favorita:</label>
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
 
         <fieldset>
-            <legend>Configurações</legend>
-            <p>Consentimento LGPD:</p>
-            <input type="checkbox" name="userConsent" id="consent" value="consentido" required/>
-            <label for="consent">Eu aceito participar da pesquisa</label>
+          <legend>Opnião</legend>
 
-            <input type="checkbox" name="userGetResult" id="getResult" value="accepted"/>
-            <label for="getResult">Desejo receber os resultados da pesquisa</label>
+          <p id="satisfaction">Nível de satisfação com a Culturama:</p>
+          <input
+            type="radio"
+            name="userSatisfaction"
+            id="otimo"
+            value="otimo"
+          />
+          <label for="otimo">Muito satisfeito</label>
+          <input type="radio" name="userSatisfaction" id="bom" value="bom" />
+          <label for="bom">Satisfeito</label>
+          <input
+            type="radio"
+            name="userSatisfaction"
+            id="regular"
+            value="regular"
+          />
+          <label for="regular">Regular</label>
+          <input type="radio" name="userSatisfaction" id="ruim" value="ruim" />
+          <label for="ruim">Insatisfeito</label>
+          <input
+            type="radio"
+            name="userSatisfaction"
+            id="pessimo"
+            value="pessimo"
+          />
+          <label for="pessimo">Muito insatisfeito</label>
 
+          <label for="comment">Comentários:</label>
+          <textarea
+            name="userComment"
+            id="comment"
+            rows="4"
+            cols="50"
+            placeholder="Escreva suas opinião aqui..."
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Configurações</legend>
+          <p>Consentimento LGPD:</p>
+          <input
+            type="checkbox"
+            name="userConsent"
+            id="consent"
+            value="consentido"
+            required
+          />
+          <label for="consent">Eu aceito participar da pesquisa</label>
+
+          <input
+            type="checkbox"
+            name="userGetResult"
+            id="getResult"
+            value="accepted"
+          />
+          <label for="getResult"
+            >Desejo receber os resultados da pesquisa</label
+          >
         </fieldset>
 
         <button type="reset">Limpar</button>
