@@ -30,8 +30,8 @@
           <input
             type="tel"
             name="userPhoneNumber"
-            pattern="[0-9] {11}"
-            placeholder="9999999999"
+            pattern="[0-9]{11}"
+            placeholder="99999999999"
             required
           />
 
@@ -53,7 +53,7 @@
           <label for="userGender">Prefiro não informar</label>
 
           <label for="maritalStatus">Estado Civil:</label>
-          <select name="maritalStatus" id="">
+          <select name="maritalStatus" id="maritalStatus" required>
             <option value="Casado">Casado</option>
             <option value="Solteiro">Solteiro</option>
             <option value="Divorciado">Divorciado</option>
@@ -61,7 +61,7 @@
           </select>
 
           <label for="userState">Estado:</label>
-          <select name="userState" id="">
+          <select name="userState" id="userState" required>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -94,6 +94,7 @@
           <label for="userCity">Cidade:</label>
           <input type="text" name="userCity" id="userCity" autocomplete="address-level2"/>
         </fieldset>
+        
 
         <button type="submit">Enviar</button>
       </form>
