@@ -145,12 +145,22 @@
             <label for="comment">Comentários:</label>
             <textarea name="userComment" id="comment" rows="4" cols="50" placeholder="Escreva suas opnião aqui..."></textarea>
 
-            <p>Consentimento LGPD:</p>
-            <input type="checkbox" name="userConsent" id="consent" value="consentido"/>
-            <label for="consent">Li e concordo com a política de privacidade</label>
+
 
         </fieldset>
 
+        <fieldset>
+            <legend>Configurações</legend>
+            <p>Consentimento LGPD:</p>
+            <input type="checkbox" name="userConsent" id="consent" value="consentido" required/>
+            <label for="consent">Eu aceito participar da pesquisa</label>
+
+            <input type="checkbox" name="userGetResult" id="getResult" value="accepted"/>
+            <label for="getResult">Desejo receber os resultados da pesquisa</label>
+
+        </fieldset>
+
+        <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
       </form>
     </section>
