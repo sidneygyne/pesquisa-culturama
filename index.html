@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pesquisa Culturama</title>
+    <title url="index.html">Pesquisa Culturama</title>
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
           <input type="number" name="userAge" required min="12" max="120" id="age" />
 
           <label for="birthDate">Data de Nascimento:</label>
-          <input type="date" name="userbirthDate" id="birthDate" />
+          <input type="date" name="userbirthDate" id="birthDate" required/>
 
           <label for="email">Email:</label>
           <input type="email" name="userEmail" required  id="email"/>
@@ -44,17 +44,17 @@
           <legend>Perfil</legend>
 
           <p>Gênero:</p>
-          <input type="radio" name="uderGender" value="Masculino" id="male" />
+          <input type="radio" name="userGender" value="Masculino" id="male" required />
           <label for="male">Masculino</label>
-
-          <input type="radio" name="uderGender" value="Feminimo" id="female" />
+          <input type="radio" name="userGender" value="Feminimo" id="female" />
           <label for="female">Feminimo</label>
 
-          <input type="radio" name="uderGender" value="Prefiro não informar" id="preferNotToSay" />
+          <input type="radio" name="userGender" value="Prefiro não informar" id="preferNotToSay" />
           <label for="preferNotToSay">Prefiro não informar</label>
 
           <label for="maritalStatus">Estado Civil:</label>
           <select name="userMaritalStatus" id="maritalStatus" required>
+            <option value=""></option>
             <option value="Casado">Casado</option>
             <option value="Solteiro">Solteiro</option>
             <option value="Divorciado">Divorciado</option>
@@ -62,7 +62,8 @@
           </select>
 
           <label for="state">Estado:</label>
-          <select name="userState" id="state" required>
+          <select name="userState" id="state" required value="">
+            <option value=""></option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -99,7 +100,7 @@
         <fieldset>
             <legend>Hábitos</legend>
 
-            <p for="social">Redes sociais:</P>
+            <p id="social">Redes sociais:</p>
             <input type="checkbox" name="social" id="instagram" value="instagram"/>
             <label for="instagram">Instagram</label>
             <input type="checkbox" name="social" id="facebook" value="facebook"/>
@@ -130,7 +131,7 @@
         <fieldset>
             <legend>Opnião</legend>
 
-            <p for="satisfaction">Nível de satisfação com a Culturama:</p>
+            <p id="satisfaction">Nível de satisfação com a Culturama:</p>
             <input type="radio" name="userSatisfaction" id="otimo" value="otimo"/>
             <label for="otimo">Muito satisfeito</label>
             <input type="radio" name="userSatisfaction" id="bom" value="bom"/>
@@ -143,7 +144,7 @@
             <label for="pessimo">Muito insatisfeito</label>
 
             <label for="comment">Comentários:</label>
-            <textarea name="userComment" id="comment" rows="4" cols="50" placeholder="Escreva suas opnião aqui..."></textarea>
+            <textarea name="userComment" id="comment" rows="4" cols="50" placeholder="Escreva suas opinião aqui..." required></textarea>
 
 
 
