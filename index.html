@@ -127,6 +127,30 @@
             <input type="color" name="userFavoriteColor" id="favoriteColor"/>
         </fieldset>
 
+        <fieldset>
+            <legend>Opnião</legend>
+
+            <p for="satisfaction">Nível de satisfação com a Culturama:</p>
+            <input type="radio" name="userSatisfaction" id="otimo" value="otimo"/>
+            <label for="otimo">Muito satisfeito</label>
+            <input type="radio" name="userSatisfaction" id="bom" value="bom"/>
+            <label for="bom">Satisfeito</label>
+            <input type="radio" name="userSatisfaction" id="regular" value="regular"/>
+            <label for="regular">Regular</label>
+            <input type="radio" name="userSatisfaction" id="ruim" value="ruim"/>
+            <label for="ruim">Insatisfeito</label>
+            <input type="radio" name="userSatisfaction" id="pessimo" value="pessimo"/>
+            <label for="pessimo">Muito insatisfeito</label>
+
+            <label for="comment">Comentários:</label>
+            <textarea name="userComment" id="comment" rows="4" cols="50" placeholder="Escreva suas opnião aqui..."></textarea>
+
+            <p>Consentimento LGPD:</p>
+            <input type="checkbox" name="userConsent" id="consent" value="consentido"/>
+            <label for="consent">Li e concordo com a política de privacidade</label>
+
+        </fieldset>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
