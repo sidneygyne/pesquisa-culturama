@@ -1,7 +1,119 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
+   background-color: #f9f9f9  ;
    font-family: "Work Sans", sans-serif;
+}
+
+main {
+   width: 100% ;
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+header {
+   text-align: center;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+img {
+   width: 100px;
 }
 
 h1 {
    font-family: "Fjalla One", sans-serif; 
+   text-align: center;
+}
+
+form {
+   background-color: #fff;
+   padding: 15px;
+   margin-bottom: 100px;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+   padding: 15px;
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   margin-bottom: 15px;
+}
+
+legend {
+   font-weight: bold;
+   font-size: 18px;
+   padding: 0 5px;
+}
+
+label {
+   display: inline-block;
+   margin-bottom: 5px;
+   font-weight: 500;
+}
+
+.label-radio-checkbox {
+   font-weight: normal;
+}
+
+p {
+   margin-bottom: 15px;
+   font-weight: 500;
+}
+
+input, select, textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+}
+
+textarea {
+   min-height: 100px;
+   resize: vertical;
+}
+
+input[type="radio"], input[type="checkbox"] {
+   width: auto ;
+}
+
+input[type="color"] {
+   width: 40px;
+   padding: 0 5px;
+}
+
+input:invalid, section:invalid, textarea:invalid {
+   border-color: red;
+}
+
+input:valid, section:valid, textarea:valid {
+   border-color: green;
+}
+
+button {
+   background-color: #ffffff;
+   padding: 10px 20px;
+   border: 1px solid #cccccc; 
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button[type="submit"]:hover {
+   background-color: orangered;  
+   color: #ffffff;
+}
+
+button[type="reset"]:hover {
+   background-color: green;  
+   color: #ffffff;
 }
