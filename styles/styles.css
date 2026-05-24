@@ -78,6 +78,17 @@ input, select, textarea {
    border-radius: 4px;
 }
 
+input[type="tel"], input[type="file"]  {
+   margin-bottom: 0px;
+}
+
+small {
+   display: block;
+   margin-bottom: 20px;
+   color: #666666;
+   font-size: 12px;
+}
+
 textarea {
    min-height: 100px;
    resize: vertical;
@@ -87,9 +98,15 @@ input[type="radio"], input[type="checkbox"] {
    width: auto ;
 }
 
-input[type="color"] {
+input[type="color"]{
    width: 40px;
    padding: 0 5px;
+}
+
+input:focus {
+   border-color: #66afe9;
+   outline: none;
+   box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
 }
 
 input:invalid, section:invalid, textarea:invalid {
